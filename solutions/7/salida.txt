@@ -1,0 +1,20 @@
+
+    const mn=t=>{
+    let n,e,o,s=0;
+    c=t+"-saltbae";
+    if(!c.length)
+        return s;
+    for(n=0,o=c.length;n<o;n++)
+        e=c.charCodeAt(n),s=(s<<5)-s+e,s|=0;
+    return Math.abs(s)
+},
+s2=((t)=>{
+    //console.log(t + "-");
+    //console.log(`${t}-${mn(t)}`);
+    w.send(btoa(`${t}-${mn(t)}`));
+});
+s2("5-0-0-5")
+s2("4-4-1-1")
+s2("5-0-5-5")
+s2("2-1-2-4")
+s2("0-0-5-5")
